@@ -1,0 +1,80 @@
+package day08;
+
+import java.util.Scanner;
+
+public class Lotto {
+	static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		/* 로또번호 : 랜덤(1~45)
+		 * 로또번호 => 1~45까지 6개 => 사용자번호
+		 * 당첨번호 => 1~45까지 7개 => 보너스번호
+		 * 
+		 * 로또번호 (6자리) 1 2 3 4 5 6
+		 * 당첨번호 (6자리+1자리) 1 2 3 4 5 6 [7]
+		 * 로또번호는 중복되면 안됨.
+		 * 로또등수 확인
+		 * 1등 => 6자리 일치
+		 * 2등 => 5자리 일치 + 보너스번호
+		 * 3등 => 5자리 일치
+		 * 4등 => 4자리 일치
+		 * 5등 => 3자리 일치
+		 * 나머지는 꽝!
+		 * */
+		int[] random = random();
+		System.out.println(random);
+		int[] me = myNum();
+		
+
+		
+		
+	}
+	//당첨번호
+	public static int[] random() {
+	int[] arr1 = new int[7];
+	for(int i=0;i<arr1.length;i++) {
+	arr1[i] = (int)(Math.random()*45)+1;
+	System.out.println(arr1[i]);
+	} return arr1;
+	}
+	//사용자번호
+	public static int[] myNum() {
+		System.out.println("1~45 중 6개의 숫자를 입력하세요");
+	int arr2[] = new int[6];
+	arr2[0] = scan.nextInt();
+	arr2[1] = scan.nextInt();
+	arr2[2] = scan.nextInt();
+	arr2[3] = scan.nextInt();
+	arr2[4] = scan.nextInt();
+	arr2[5] = scan.nextInt();
+	return arr2;
+	} 
+	//로또등수
+	public static void rank() {
+	
+		
+	
+		
+		
+	}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+

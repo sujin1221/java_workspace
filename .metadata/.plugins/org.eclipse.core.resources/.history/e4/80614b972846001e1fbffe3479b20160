@@ -1,0 +1,11 @@
+package day10;
+
+public class CardMain {
+
+	public static void main(String[] args) {
+		CardPack cp = new CardPack();
+		cp.getPack()[1].print();
+
+	}
+
+}

@@ -1,0 +1,122 @@
+package day10;
+
+public class Class03 {
+
+	public static void main(String[] args) {
+		/* 티비 클래스
+		 * 전원 on/off 볼륨 up/down(순환x) 채널 up/down(순환o)
+		 * */
+		Tv tv = new Tv("삼성", "회색");
+
+	}
+
+}
+//멤버변수선언
+class Tv{
+	private boolean power;
+	private int vol;
+	private int channel;
+	private String tvName;
+	private String tvColor;
+//생성자
+public Tv(String tvName,String tvColor) {
+		this.tvName = tvName;
+		this.tvColor = tvColor;
+}
+//메서드
+public void powerOn() {
+	power = true;
+	System.out.println("전원이 켜졌습니다.");
+}
+public void powerOff() {
+	power = false;
+	System.out.println("전원이 꺼졌습니다.");
+}
+public void volUp() {
+if(power) {
+	vol++;
+System.out.println("볼륨크기: "+vol);
+} else {
+	System.out.println("전원을 먼저 켜주세요.");
+}
+}
+public void volDown() { 
+	if(vol>=1 && vol<=50) {
+	vol--;	
+System.out.println("볼륨크기: "+vol);
+} else {
+	System.out.println("볼륨을 줄일 수 없습니다!");
+}
+}
+public int channelUp() {
+	channel++;
+	System.out.println("채널: "+channel);
+	return channel;
+}
+public int channelDown() {
+	channel--;
+	System.out.println("채널: "+channel);
+	return channel;
+	
+	
+}
+public boolean isPower() {
+	return power;
+}
+public void setPower(boolean power) {
+	this.power = power;
+}
+public int getVol() {
+	return vol;
+}
+public void setVol(int vol) {
+	this.vol = vol;
+}
+public int getChannel() {
+	return channel;
+}
+public void setChannel(int channel) {
+	this.channel = channel;
+}
+public String getTvName() {
+	return tvName;
+}
+public void setTvName(String tvName) {
+	this.tvName = tvName;
+}
+public String getTvColor() {
+	return tvColor;
+}
+public void setTvColor(String tvColor) {
+	this.tvColor = tvColor;
+} 
+
+
+
+
+
+
+
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

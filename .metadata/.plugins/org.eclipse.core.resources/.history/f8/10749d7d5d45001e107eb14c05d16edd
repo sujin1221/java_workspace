@@ -1,0 +1,23 @@
+package day09;
+
+public class ClassEx01 {
+
+	public static void main(String[] args) {
+		point p = new point();
+		p.print();
+		 
+
+	}
+
+}
+//(0,0)
+class point{
+	//멤버변수 자리
+	int x;
+	int y;
+	//print
+	//같은 클래스의 멤버변수는 모든 메서드에서 공유됨
+	public void print() {
+		System.out.println("("+x+","+y+")");
+	}
+}

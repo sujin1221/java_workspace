@@ -1,0 +1,52 @@
+package day06;
+
+public class Method02 {
+
+	public static int sum(int num1, int num2) {
+		int result = num1 + num2;
+		return result;
+	}
+	public static int b(int num1, int num2) {
+		int result = num1 - num2;
+		return result;
+	}
+	public static void c(int num1, int num2) {
+		int result = num1 * num2;
+		
+	}
+	public static void d(int num1, int num2) {
+		double result = num1 / num2;
+		
+	}
+	public static void e(int num1, int num2) {
+		int result = num1 % num2;
+		
+	}
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		/* 메서드를 활용하여 계산기 작성
+		 * 
+		 * 메서드는 + - * / %
+		 * 두 정수가 주어지면 두 정수의 연산을 하는 메서드를 작성
+		 * +일때 호출 => 메인에서 출력
+		 * -일때 호출 => 메인에서 출력
+		 * *일떄 호출 => 메서드에서 출력
+		 * /일떄 호출 => 메서드에서 출력 => 리턴을 double로 설정
+		 * %일떄 호출 => 메서드에서 출력
+		 * */
+		int sum = sum(3,5);
+		System.out.println(sum);
+
+		
+		
+		
+		
+		
+	}
+
+}

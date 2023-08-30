@@ -1,0 +1,10 @@
+package day06;
+
+public class 주사위게임 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
