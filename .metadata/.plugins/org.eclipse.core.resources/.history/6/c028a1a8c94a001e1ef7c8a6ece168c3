@@ -1,0 +1,14 @@
+package Lotto;
+/* 1. Lotto class: 6개의 배열 생성하는 로또 클래스 (+수동 생성에 대한 메서드)
+ * 2. LottoE class : 기존 로또 클래스를 상속 받아 처리 (당첨번호를 저장하는 배열 저장) => 기존 배열(6자리) int bonus만 처리
+ * 3. LottoManager : 메뉴의 메서드 처리
+ * 4. LottoMain : 메뉴 입력받아 처리
+ * */
+public class Lotto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

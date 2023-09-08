@@ -1,0 +1,46 @@
+package studentmanager;
+
+import java.util.Scanner;
+
+public class Program_Main {
+
+	public static void main(String[] args) {
+		/* 메뉴를 출력하여 사용자로부터 어떤 기능을 수행할 것인지 처리
+		 * 1. 학생 등록 | 2. 학생 검색 | 3. 학생 리스트 | 4. 수강 신청 | 5. 수강 철회 | 6. 종료
+		 * 
+		 * */
+	    
+		Scanner scan = new Scanner(System.in);
+		int subject = 0;
+		do {
+		System.out.println("1. 학생 등록 | 2. 학생 검색 | 3. 학생 리스트 | 4. 수강 신청 | 5. 수강 철회 | 6. 종료");	
+		subject = scan.nextInt();	
+		switch(subject) {
+		case 1 :
+			System.out.println("새로운 학생을 등롭합니다."); 
+			
+			break;
+		case 2 :
+			System.out.println("검색할 학생의 이름을 입력하세요");
+	
+			break;
+		case 3 : System.out.println("학생 리스트를 출력합니다."); 
+		
+		break;
+		case 4 : System.out.println("새로운 수강을 신청합니다."); 
+		
+		break;
+		case 5 : System.out.println("신청한 수강을 철회합니다."); 
+		
+		break;
+		case 6 : System.out.println("종료합니다"); 		
+		break;	
+		default: System.out.println("===잘못된 메뉴를 선택했습니다!===");
+		}
+		} while(subject != 6); 
+		System.out.println("프로그램 종료");
+		
+		
+
+	}
+}

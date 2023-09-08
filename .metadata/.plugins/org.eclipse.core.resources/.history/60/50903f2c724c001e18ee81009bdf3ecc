@@ -1,0 +1,20 @@
+package day15;
+
+public class Exception04 {
+
+	public static void main(String[] args) {
+		// 멀티 캐치
+		/* try{
+		 *  code...
+		 * }catch(하위예외클래스 e){
+		 * 
+		 * }catch(하위예외클래스 e){
+		 * 
+		 * }catch(Exception e){
+		 * 
+		 * }
+		 * */
+
+	}
+
+}

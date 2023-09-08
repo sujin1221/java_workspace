@@ -1,0 +1,22 @@
+package day17;
+
+public class Map01 {
+
+	public static void main(String[] args) {
+		/* Map
+		 * - 값을 2개 저장, key/value값으로 저장
+		 * - key는 중복 불가, value는 중복 가능
+		 * - value는 key에 속해있는 부속품
+		 * - HashMap을 가장 많이 사용
+		 * 
+		 * HashMap<String, Integer> map = new HashMap<String, Integer>();
+		 * Map은 값이 2개여서 Iterator를 map 자체로는 사용불가
+		 * 향상된 for문/Iterator => set으로 key값을 추출 한 후 사용함
+		 * 
+		 * list, set => .add()
+		 * map => .put() / getKey(), getValue() => 요소 하나가 아닌 전체가 추출됨
+		 * */
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package Lotto;
+
+public class LottoManager {
+	//로또번호자동생성
+public int[] creatLottoAuto(){
+	int[] l = new int[6];
+	int randomNum = 0;
+   for(int i=0;i<l.length;i++) {
+	   do {
+	    randomNum = (int)(Math.random()*45)+1;   
+	   }while(isContain(l,randomNum));
+	   l[i] = randomNum;	   
+   }
+   return l;
+}
+   //중복제거
+public static boolean isContain(int arr[], int random) {
+for(int tmp : arr) {
+if(tmp == random) {
+	return true;
+}
+}
+return false;
+}
+	
+	
+	
+	
+	
+	
+
+}
