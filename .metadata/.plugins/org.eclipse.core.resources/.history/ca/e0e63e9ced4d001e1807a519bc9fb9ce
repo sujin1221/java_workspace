@@ -29,7 +29,6 @@ public class Map02 {
 			System.out.println(tmp+":"+map.get(tmp)); //value 추출
 		}
 		System.out.println("합계: "+sum);
-		System.out.println("평균: "+sum/map.size());
 		
 		double avg = 0; //초기화 안하면 오류나므로 초기화 해주기
 		avg = sum/3;
