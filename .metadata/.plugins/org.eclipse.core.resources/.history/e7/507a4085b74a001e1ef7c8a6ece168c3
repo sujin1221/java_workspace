@@ -1,0 +1,39 @@
+package studentmanager;
+
+public class Subject_연습 {
+//멤버변수 선언
+	private int subjectCode; //과목코드
+	private String subjectName; //과목명
+	private int credit; //학점
+	private int hour; //시수
+	private String teacherName; //교수명
+	private int trem; //학기
+	private String timeTable; //시간표
+	//생성자
+	public Subject_연습() {}
+	//한개만 있는거
+	public Subject_연습(String subjectName) {
+		this.subjectName = subjectName;
+	}
+	//전체 다 있는거
+	public Subject_연습(int subjectCode, String subjectName, int credit, int hour, String teacherName, int trem,
+			String timeTable) {
+		super();
+		this.subjectCode = subjectCode;
+		this.subjectName = subjectName;
+		this.credit = credit;
+		this.hour = hour;
+		this.teacherName = teacherName;
+		this.trem = trem;
+		this.timeTable = timeTable;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,98 @@
+package studentmanager;
+
+public class student_연습 {
+	//멤버변수
+	private int classNum = 12345; //학번
+	private String studentName = "이름"; //학생 이름
+	private String personNum = "000000-0000000"; //주민
+	private String hakbu = "학부"; //학부
+	private String major = "학과"; //학과
+	private Subject[] s = new Subject[5]; //과목 5개를 배열로 저장
+	int cnt = 0; //변수 카운트용
+	//생성자
+	public student_연습() {}
+	public student_연습(String studentName) {
+		this.studentName = studentName;
+	}
+	public student_연습(int classNum, String studentName, String personNum, String hakbu, String major) {
+		super();
+		this.classNum = classNum;
+		this.studentName = studentName;
+		this.personNum = personNum;
+		this.hakbu = hakbu;
+		this.major = major;
+	}
+	//학생정보 출력 메서드
+	public void stdPrint() {
+		System.out.println("학생명(학번):"+studentName+"("+    +")");
+		System.out.println("학생명(학과):"+    +"("+    +")");
+	}
+	//수강과목 출력 메서드
+	public void subPrint() {
+		//수강과목 없을 경우:
+		
+		
+		
+		
+		
+	}
+
+	//수강과목 추가 신청 메서드
+	
+	//수강과목 삭제(철회) 메서드
+	
+	//getter setter
+	public int getClassNum() {
+		return classNum;
+	}
+	public void setClassNum(int classNum) {
+		this.classNum = classNum;
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public String getPersonNum() {
+		return personNum;
+	}
+	public void setPersonNum(String personNum) {
+		this.personNum = personNum;
+	}
+	public String getHakbu() {
+		return hakbu;
+	}
+	public void setHakbu(String hakbu) {
+		this.hakbu = hakbu;
+	}
+	public String getMajor() {
+		return major;
+	}
+	public void setMajor(String major) {
+		this.major = major;
+	}
+	public Subject[] getS() {
+		return s;
+	}
+	public void setS(Subject[] s) {
+		this.s = s;
+	}
+	public int getCnt() {
+		return cnt;
+	}
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

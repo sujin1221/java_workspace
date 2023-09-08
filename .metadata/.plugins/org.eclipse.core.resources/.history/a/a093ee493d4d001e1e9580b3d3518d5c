@@ -1,0 +1,77 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class List02 {
+Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		/* --메뉴판--
+		 * 1.햄버거: 7000
+		 * 2. 피자: 15000
+		 * 3. 음료수: 2000
+		 * 4. 과자: 1000
+		 * 5. 사탕: 500
+		 * 6. 프로그램 종료
+		 * 
+		 * 메뉴선택> 1
+		 * 수량> 2
+		 * => 1번 햄버거 2개 주문
+		 * 주문을 끝내시려면 0을 눌러주세요. 1
+		 * 메뉴선택> 3
+		 * 수량> 2
+		 * => 음료 2개 주문
+		 * 주문을 끝내시려면 0을 눌러주세요. 0
+		 * 
+		 * --선택한 메뉴---
+		 * 1.햄버거 2개
+		 * 2.음료 2개
+		 * 총 지불금액 000원
+		 * */
+		List<String> list = new ArrayList<String>();
+		list.add("1.햄버거 7000");
+		list.add("2.피자 7000");
+		list.add("3.음료 7000");
+		list.add("4.과자 7000");
+		list.add("5.사탕 7000");
+		list.add("6.종료");	
+		for(String tmp : list) {
+			System.out.print(tmp+" ");
+		}
+		
+		
+		
+
+	}
+
+}
+class FoodManager{
+	//멤버변수: ArrayList 메뉴, ArrayList 가격
+	//그 외 필요한 멤버변수는 선택
+	String menu;
+	int price;
+	//출력 메서드
+	//결과, 메뉴, 메뉴선택 add(), 계산 sale()
+	public void menu() {
+		
+	}
+    public void allMenu() {
+    	List<String> list = null;
+		for(int i=0;i<list.size();i++) {	
+			System.out.print(list.get(i)+" ");
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

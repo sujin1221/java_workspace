@@ -1,0 +1,107 @@
+package Lotto;
+
+public class LottoManager {
+	
+	
+	
+	
+	
+	
+	
+	
+	//2.로또번호자동생성
+public int[] creatLottoAuto(){
+	int[] l = new int[6];
+	int randomNum = 0;
+   for(int i=0;i<l.length;i++) {
+	   do {
+	    randomNum = (int)(Math.random()*45)+1;   
+	   }while(isContain(l,randomNum));
+	   l[i] = randomNum;	   
+   }
+   return l;
+}
+   //중복제거
+public static boolean isContain(int arr[], int random) {
+for(int tmp : arr) {
+if(tmp == random) {
+	return true;
+}
+}
+return false;
+}
+
+	//3.당첨번호자동생성 
+public int[] insertLottoAuto(){
+	int[] l = new int[7];
+	int randomNum = 0;
+   for(int i=0;i<l.length;i++) {
+	   do {
+	    randomNum = (int)(Math.random()*45)+1;   
+	   }while(isContain1(l,randomNum));
+	   l[i] = randomNum;	   
+   }
+   return l;
+}
+   //중복제거
+public static boolean isContain1(int arr[], int random) {
+for(int tmp : arr) {
+if(tmp == random) {
+	return true;
+}
+}
+return false;
+}
+
+//4.등수체크
+public static int lottoRank(int lotto[], int user[]) {
+if(lotto.length <= user.length) {
+	return -1;
+}
+int cnt = 0; //당첨 개수 카운트
+for(int i=0; i<user.length ; i++) {
+if(isContain(user, lotto[i])) {
+	cnt++;
+}
+}
+switch(cnt) {
+case 6 : return 1; 
+case 5 : 
+	if(isContain(user, lotto[lotto.length-1])) {
+		return 2;
+	} else {
+		return 3;
+	}
+case 4:
+	return 4;
+case 3:
+	return 5;
+	default : 
+		return -1;
+}
+}
+//5.당첨번호리스트확인(전부)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+}
