@@ -1,0 +1,19 @@
+package day21;
+
+import java.io.File;
+
+public class FileObject {
+
+	public static void main(String[] args) {
+		/* 파일이 가지고 있는 정보 출력
+		 * 
+		 * */
+		File f = new File("D:\\kimsujin\\java_workspace-main\\java_workspace-main\\java_project");
+		System.out.println(f.getName()); //경로를 '제외'한 파일명만 출력
+		System.out.println(f.getPath()); //파일의 '경로'+'파일명' 출력
+		System.out.println(f.getParent()); //파일의 '경로'만 출력
+		System.out.println(File.separator); //파일 구분자(많이 사용)
+
+	}
+
+}

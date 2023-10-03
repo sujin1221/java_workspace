@@ -1,0 +1,16 @@
+package 게임;
+
+public class 룰렛 {
+
+	public static void main(String[] args) {
+		int min = 0;
+		int max = 99;
+		double roulette;
+		
+		roulette = (int)(Math.random()*(max+1-min))+min;
+		
+		
+
+	}
+
+}

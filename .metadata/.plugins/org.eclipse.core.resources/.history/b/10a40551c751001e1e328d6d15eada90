@@ -1,0 +1,121 @@
+package day19;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+import studentmanager.Student01;
+import studentmanager.Subject;
+
+public class 과제 {
+	/* 수강관리프로그램
+	 * 기존배열의 수강관리 프로그램을 list로 변경해서 구현
+	 * */
+	public int classNum = 12345; //학번
+	public String major = "학과"; //학과
+	public String studentName = "이름"; //학생 이름
+	public String personNum = "000000-0000000"; //주민
+	ArrayList<Subject> s = new ArrayList<Subject>(); //과목
+	
+	public 과제(int classNum, String major, String studentName, String personNum) {
+		super();
+		this.classNum = classNum;
+		this.major = major;
+		this.studentName = studentName;
+		this.personNum = personNum;
+	}
+	
+	//과목  추가 메서드
+		public void addSubject() {
+			for(int i=0;i<s.size();i++) {
+				System.out.println("등록할 과목을 입력해주세요.");
+				Scanner scan = new Scanner(System.in);			
+				String a = scan.next();		
+				s.size()[i] = new Subject();		
+				s[i].setSubjectName(a);
+				cnt++;
+				System.out.println("과목을 추가로 입력하시겠습니까? (y/n)");
+				String a1 = scan.next();	
+				if(a1.equals("n")) {
+					break;				
+				}			
+				}
+		}
+		public void deleteSub(Scanner scan) {	
+			System.out.println("철회할 과목을 입력하세요.");
+			String a = scan.next();
+			int b = 0;
+			for(int i=0;i<cnt;i++) {
+				if(a.equals(s[i].getSubjectName())){
+				b = i;			
+				}
+				}		
+			for(int j=b;j<cnt;j++) {
+				s[j] = s[j+1];	
+			}		
+			cnt--;
+		}
+
+	public int getClassNum() {
+		return classNum;
+	}
+
+	public void setClassNum(int classNum) {
+		this.classNum = classNum;
+	}
+
+	public String getMajor() {
+		return major;
+	}
+
+	public void setMajor(String major) {
+		this.major = major;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public String getPersonNum() {
+		return personNum;
+	}
+
+	public void setPersonNum(String personNum) {
+		this.personNum = personNum;
+	}
+
+	public ArrayList<Subject> getS() {
+		return s;
+	}
+
+	public void setS(ArrayList<Subject> s) {
+		this.s = s;
+	}
+
+	@Override
+	public String toString() {
+		return "과제 [classNum=" + classNum + ", major=" + major + ", studentName=" + studentName + ", personNum="
+				+ personNum;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

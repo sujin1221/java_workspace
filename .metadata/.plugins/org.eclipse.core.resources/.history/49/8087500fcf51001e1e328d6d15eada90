@@ -1,0 +1,8 @@
+package StudentManager2;
+
+public class Student {
+	/* 멤버변수: 이름, 나이, 전번, map<과목,점수>, 합계, 평균
+	 * */
+	
+
+}

@@ -1,0 +1,40 @@
+package 게임;
+
+public class project {
+
+	public static void main(String[] args) {
+		System.out.println("                 7gBBBBBBQU.                 XBB5 \n"
+				+ "             :gBBBQbuYLu5QBBBBv             BB7vBb\n"
+				+ "          .QBBBr            :bBQBr         :BQ  BB\n"
+				+ "         BQBi                  .RBBi        IBBBBr\n"
+				+ "       rBBi                       BQR         BQ  \n"
+				+ "      5BR                          rBB        QB  \n"
+				+ "     LB1                             QB       BB  \n"
+				+ "LDBBBBQBQBQBBBQBQB1  PB  .BBQBBBBBBBZBBBQBQP  BB  \n"
+				+ "BBPvr..:iiriiiiiir   .r   riiiiiiiri:..:YvBB  BB  \n"
+				+ "BB   .:i:iiiii::.:7uJvrjJY:..::i:iii::..  QB  BB  \n"
+				+ "BB  BBBBBBBBBBBQBBBBBBBBBQBBBBBBBBBQBBBB  BQ  BB  \n"
+				+ "BB  BB         :Br         BQ         BB  BB  BB  \n"
+				+ "BB  BB  RQBBBr rB7 iBQBBQ  BB  BBBBB  BB  BB  BB  \n"
+				+ "BB  BB   . BB  7BY  . QBs  BB  . LBB  BB  QB  BB  \n"
+				+ "BB  BB    YBY  7BY    BB   BB    BB   BB  BBBBB.  \n"
+				+ "BB  BB    BB   vQJ   BB    BB   IBu   QB  BB7.    \n"
+				+ "BQ  BB   BB.   7BL  dBq    BB  .BB    BB  BB      \n"
+				+ "BB  BB   Qv    rBv  1D     BB  :Q     BB  QB      \n"
+				+ "BB  BB         rB7         BB         BQ  BB      \n"
+				+ "BB  QBBBBBBBBBBBBBBBBBBBQBBBQBBBBBBBBBBB  BB      \n"
+				+ "BQ                                        BB      \n"
+				+ "BBQQS1KEEgZDZgEZEDZDEgEDEDEZZDZDZDEDdduIgQBB      \n"
+				+ ".7UJBBPUqXK5XSX5X5K5KSXSXSXSXSX5XSqXKuBBPUur      \n"
+				+ "    QB                                QB          \n"
+				+ "    BB     .......................    BQ          \n"
+				+ "    BB    SBBBBBBBBBBBBBQBBBQBBBBB    BB          \n"
+				+ "    BQ                                BB          \n"
+				+ "    BB                                QB          \n"
+				+ "    RBBBBBBBBBBBBBBBBBBBBBBBBBBBBQBQBgBB  ");
+		System.out.println("1번 메뉴 | 2번 메뉴 | 3번 메뉴 | 4번 메뉴 ");
+		 
+
+	}
+
+}

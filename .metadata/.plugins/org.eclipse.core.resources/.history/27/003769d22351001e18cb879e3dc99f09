@@ -1,0 +1,84 @@
+package day19;
+
+import java.util.ArrayList;
+
+public class StreamEx01 {
+
+	public static void main(String[] args) {
+		/* 여행상품이 있습니다.
+		 * 여행 비용은 15세 이상 100만원, 15세 미만은 50만원
+		 * 고객 3명이 패키지 여행을 떠나려고 합니다
+		 * 1.여행비용 계산
+		 * 2.고객명단 출력
+		 * 
+		 * 고객은 클래스로 작성, arraylist로 고객추가
+		 * 고객정보
+		 * 이름: 이순신, 나이: 40, 비용: 100만원
+		 * 이름: 김순이, 나이: 35, 비용: 100만원
+		 * 이름: 이아들, 나이: 10, 비용: 50만원
+		 * 총 여행경비: 250만원
+		 * */
+		ArrayList<Customer> tour = new ArrayList<>();
+		tour.add(new Customer("이순신", 40, 100));
+		tour.add(new Customer("김순이", 35, 100));
+		tour.add(new Customer("이아들", 10, 50));
+		tour.stream().forEach(System.out::println);
+		System.out.println("-----------------");
+		int sum = tour.stream()
+				.mapToInt(n->n.getPrice()) //변환
+				.sum(); //합계
+		System.out.println("총 여행경비: "+sum+"만원");
+
+		
+		
+		
+		
+	}
+
+}
+class Customer{
+	private String name;
+	private int age;
+	private int price;
+	
+	public Customer() {}
+
+	public Customer(String name, int age, int price) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.price = price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "이름: " + name + ", 나이: " + age + ", 비용: " + price + "만원";
+	}
+	
+	
+	
+}

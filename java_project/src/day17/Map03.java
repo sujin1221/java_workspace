@@ -20,7 +20,7 @@ public class Map03 {
 		String a = scan.next();
 		System.out.println("점수> ");
 		int b = scan.nextInt();
-		map.put(a, b);
+		map.put(a, b);   
 		System.out.println("다시입력? 종료(0) >");
 		menu = scan.nextInt();
 		} while(menu != 0);

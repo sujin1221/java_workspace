@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 
  */	
 public class Program_Main implements program{
-	Student[] st = new Student[5];
+	Student01[] st = new Student01[5];
 	int cnt1 = 0;
 	public static void main(String[] args) {		
 			int menu = 0;
@@ -68,7 +68,7 @@ public class Program_Main implements program{
 		//1명의 정보값을 입력받아 객체를 생성한 후 st 배열에 추가
 		//배열이 꽉 찼다면 배열이 증가하도록 설정
 		System.out.println("추가할 학생 이름을 입력하세요.");
-		st[cnt1] = new Student();
+		st[cnt1] = new Student01();
 		st[cnt1].setStudentName(scan);
 		cnt1++;
 	}

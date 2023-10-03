@@ -1,0 +1,29 @@
+package day19;
+
+import java.util.Scanner;
+
+import studentmanager.Program_Main;
+
+public class 과제메인 {
+
+	public static void main(String[] args) {
+		과제 a = new 과제();
+		int menu = 0;
+		Scanner scan = new Scanner(System.in);	
+		a.menu();
+		do {
+			menu = scan.nextInt();
+			switch(menu) {
+			case 1: 
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 6: break;
+			}
+	} while(menu != 6);
+	System.out.println("프로그램 종료");
+
+}
+}
+

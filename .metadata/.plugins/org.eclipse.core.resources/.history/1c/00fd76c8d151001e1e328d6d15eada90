@@ -1,0 +1,19 @@
+package StudentManager2;
+
+import java.util.HashMap;
+
+public class Student {
+	/* 멤버변수: 이름, 나이, 전번, map<과목,점수>, 합계, 평균
+	 * 생성자: 객체 생성시 초기값을 결정하는 역할을 함
+	 * getter setter
+	 * 출력용 toString
+	 * */
+	private String name;
+	private int age;
+	private String phone;
+	private HashMap<String,Integer> subject = new HashMap<>();
+	private int sum;
+	private double avg;
+	
+
+}

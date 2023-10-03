@@ -1,0 +1,19 @@
+package day20;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class BufferedReader03 {
+
+	public static void main(String[] args) {
+		//과제
+		/* BufferedReader, FileReader를 이용하여 out.txt 파일을 map에 저장하고 합계와 총 인원수를 출력
+		 * 입력한 값을 읽어들이면 값은 전부 String 형태로 읽어들이게됨
+		 * 계산을 위해서는 int의 자료형으로 변환이 필요함
+		 * Int의 자료형으로 변환하기 위해서는 => Integer.parseInt(값)
+		 * */
+		BufferedReader br = new BufferedReader(new FileReader("out.txt"));
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package StudentManager2;
+
+public class Student {
+	/* 멤버변수: 이름, 나이, 전번, map<과목,점수>, 합계, 평균
+	 * 생성자: 객체 생성시 초기값을 결정하는 역할을 함
+	 * */
+	private 
+	
+
+}

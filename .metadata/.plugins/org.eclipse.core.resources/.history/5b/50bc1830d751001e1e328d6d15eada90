@@ -1,0 +1,75 @@
+package StudentManager2;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentManager implements Program{
+	//멤버변수 Student List
+	private List<Student> student = new ArrayList<>();
+	
+//	//필수적으로 출력을 원한다면
+//	public StudentManager() {
+//		add();
+//	}
+
+	//기본 학생 추가 메서드
+	public void add() {
+		student.add(new Student("홍길동",16,"010-1111-1111"));
+		student.add(new Student("김순이","010-1111-2222"));
+		student.add(new Student("이순신","010-3333-3333"));
+		student.add(new Student("강감찬",16,"010-1111-5555"));
+		student.add(new Student("바둑이"));
+	}
+	@Override
+	public void addStd(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void printStd() {
+		//학생 기본정보 출력
+		for(int i=0;i<student.size();i++) {
+			System.out.println(student.get(i));			
+		}
+		
+	}
+
+	@Override
+	public void searchStd(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modStd(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delStd(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addSub(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modSub(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delSub(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

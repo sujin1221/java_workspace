@@ -2,7 +2,7 @@ package Lotto;
 
 import java.util.Scanner;
 
-import studentmanager.Student;
+import studentmanager.Student01;
 
 public class LottoE extends Lotto{
 	Lotto[] l = new Lotto[100];

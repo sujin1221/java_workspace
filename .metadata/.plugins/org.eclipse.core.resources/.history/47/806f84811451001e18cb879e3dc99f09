@@ -1,0 +1,22 @@
+package day19;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class Stream03 {
+
+	public static void main(String[] args) {
+		/* 배열에서 짝수만 출력(정렬)
+		 * */
+		int[] arr = {5,6,1,2,4,7,8,9,3,2,4,7,8};
+		//중간연산의 순서는 상관없음!
+		Arrays.stream(arr)
+		.filter(b->b%2==0) //조건
+		.sorted() //정렬
+		.distinct() //중복제거
+		.forEach(a->System.out.print(a+" ")); //출력
+		
+
+	}
+
+}

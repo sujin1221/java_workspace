@@ -1,0 +1,47 @@
+package day21;
+
+public class SyncMain {
+
+	public static void main(String[] args) {
+		/* Thread를 상속받는 클래스 생성
+		 * 홍길동이 가지고 있는 계좌 - 홍길동 + 김순이(생활비 계좌)
+		 * 잔액: 10,000원
+		 * 홍길동 5000원 출금, 김순이 10,000원
+		 * 동기화 키워드: synchronized
+		 * */
+
+	}
+
+}
+class Bank{
+	private int money = 10000;
+	
+	//입금
+	public synchronized void saveMoney(int save) {
+		int m = this.money;
+		try {
+			Thread.sleep(1000); //1초 쉬었다가
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		setMoney(m+save);
+	}
+	//출금
+
+	
+	
+	
+	
+	
+	
+	
+	
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+}

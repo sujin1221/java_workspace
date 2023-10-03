@@ -1,0 +1,17 @@
+package day19;
+
+public class 과제 {
+	/* 수강관리프로그램
+	 * System.out.println("----menu----");
+				System.out.println("1.학생등록");
+				System.out.println("2.학생검색");
+				System.out.println("3.학생리스트");
+				System.out.println("4.수강신청");
+				System.out.println("5.수강철회");
+				System.out.println("6.종료");
+				
+	   기존배열의 수강관리 프로그램을 list로 변경해서 구현
+	 * */
+
+
+}

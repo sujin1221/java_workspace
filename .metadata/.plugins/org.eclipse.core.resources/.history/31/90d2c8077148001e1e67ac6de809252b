@@ -1,9 +1,0 @@
-package studentmanager;
-/* 과목클래스 : 한 과목의 기본정보를 나타내는 클래스
- * - 과목코드 과목명 학점 시수 교수명 학기 시간표
- * - 멤버변수 선언, 생성자, getter setter, 그 외 필요한 메서드
- * => toString, print 메서드
- * */
-public class Subject {
-
-}

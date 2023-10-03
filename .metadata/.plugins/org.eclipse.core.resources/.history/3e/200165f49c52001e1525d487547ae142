@@ -1,0 +1,10 @@
+package 게임;
+
+public class 룰렛 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
